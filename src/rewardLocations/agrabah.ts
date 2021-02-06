@@ -1,8 +1,8 @@
-import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
-import { Reward } from "../rewards/Reward";
-import { GameMode } from "../settings/enums";
-import { RewardLocation, RewardLocationType } from "./RewardLocation";
+import { GameMode } from "../types/configuration/enums";
+import { LocationName } from "../types/LocationName";
+import { Reward } from "../types/Reward";
+import { RewardLocation, RewardLocationType } from "../types/RewardLocation";
 
 const exclude: Reward[] = [Rewards.FIRE, Rewards.BLIZZARD, Rewards.THUNDER];
 
@@ -181,6 +181,7 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		description: "Ruined Chamber",
 		value: "11CDF946",
 		reward: Rewards.TORN_PAGES,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -191,6 +192,7 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		description: "Ruined Chamber",
 		value: "11CDF952",
 		reward: Rewards.RUINS_MAP,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -215,6 +217,7 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		description: "Genie Jafar",
 		value: "21D10978",
 		reward: Rewards.FIRE,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -239,6 +242,7 @@ export const agrabahRewardLocations: RewardLocation[] = [
 		description: "Wishing Lamp",
 		value: "11CE08B2",
 		reward: Rewards.WISHING_LAMP,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},

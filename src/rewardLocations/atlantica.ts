@@ -1,9 +1,9 @@
-import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
 import { formRewards } from "../rewards/form";
-import { Reward } from "../rewards/Reward";
-import { GameMode } from "../settings/enums";
-import { RewardLocation, RewardLocationType } from "./RewardLocation";
+import { GameMode } from "../types/configuration/enums";
+import { LocationName } from "../types/LocationName";
+import { Reward } from "../types/Reward";
+import { RewardLocation, RewardLocationType } from "../types/RewardLocation";
 
 const exclude: Reward[] = [
 	...Object.values(formRewards),
@@ -26,6 +26,7 @@ export const atlanticaRewardLocations: RewardLocation[] = [
 		description: "Mysterious Abyss",
 		value: "11CE08E2",
 		reward: Rewards.MYSTERIOUS_ABYSS,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -36,6 +37,7 @@ export const atlanticaRewardLocations: RewardLocation[] = [
 		description: "Blizzard",
 		value: "11CE08EE",
 		reward: Rewards.BLIZZARD,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},
@@ -46,6 +48,7 @@ export const atlanticaRewardLocations: RewardLocation[] = [
 		description: "Orichalcum+",
 		value: "11CE08FA",
 		reward: Rewards.ORICHALCUM_PLUS,
+		secondVisit: true,
 		gameMode: {
 			[GameMode.GOA_MOD]: { exclude },
 		},

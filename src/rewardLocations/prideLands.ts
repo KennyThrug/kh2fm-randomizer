@@ -1,6 +1,6 @@
-import { LocationName } from "../LocationName";
 import { Rewards } from "../rewards";
-import { RewardLocation, RewardLocationType } from "./RewardLocation";
+import { LocationName } from "../types/LocationName";
+import { RewardLocation, RewardLocationType } from "../types/RewardLocation";
 
 export const prideLandsRewardLocations: RewardLocation[] = [
 	{
@@ -184,6 +184,7 @@ export const prideLandsRewardLocations: RewardLocation[] = [
 		description: "Groundshaker",
 		value: "21D10C18",
 		reward: Rewards.THUNDER,
+		secondVisit: true,
 	},
 	{
 		type: RewardLocationType.POPUP,
