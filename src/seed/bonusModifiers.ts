@@ -1,7 +1,7 @@
 import seedrandom from "seedrandom";
 import { filterByWorld } from "../helpers/filterByWorld";
 import { shuffle } from "../helpers/shuffle";
-import { LocationName } from "../LocationName";
+import { LocationName } from "../types/LocationName";
 import { bonusModifiersRewardLocations } from "../rewardLocations/bonusModifiers";
 import { Rewards } from "../rewards";
 import { Reward } from "../rewards/Reward";

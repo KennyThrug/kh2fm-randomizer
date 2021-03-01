@@ -1,4 +1,4 @@
-import { LocationName } from "../LocationName";
+import { LocationName } from "../types/LocationName";
 import { Reward, RewardType } from "../rewards/Reward";
 import { GameMode } from "../settings/enums";
 

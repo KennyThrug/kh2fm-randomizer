@@ -1,4 +1,4 @@
-import { EnemyType } from "./Enemy";
+import { EnemyType } from "../types/Enemy";
 
 export const bosses = {
 	SHAN_YU: {
@@ -40,30 +40,29 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Hades (2nd Visit & Hades Paradox Cup Battle)",
 		value: "015E",
+		secondaryObject: "01016A", //Hercules w/Aura Sphere
 	},
 	CERBERUS: {
 		type: EnemyType.BOSS,
 		name: "Cerberus",
 		value: "015F",
-		secondaryObjectLocation: "11c4d348",
 	},
 	HYDRA: {
 		type: EnemyType.BOSS,
 		name: "Hydra",
 		value: "0160",
-		secondaryObjectLocation: "11c567c4",
+		secondaryObject: "039A", //Hydra Head
 	},
 	THRESHOLDER: {
 		type: EnemyType.BOSS,
 		name: "Thresholder",
 		value: "0161",
-		secondaryObjectLocation: "11C55244",
+		secondaryObject: "0164", //Posessor
 	},
 	DARK_THORN: {
 		type: EnemyType.BOSS,
 		name: "Dark Thorn",
 		value: "0162",
-		secondaryObjectLocation: "11C5A16C",
 	},
 	SHADOW_STALKER: {
 		type: EnemyType.BOSS,
@@ -79,13 +78,12 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Storm Rider",
 		value: "0165",
-		secondaryObjectLocation: "11c4d450",
 	},
 	PETE_TR: {
 		type: EnemyType.BOSS,
 		name: "Pete (Timeless River)",
 		value: "0167",
-		secondaryObjectLocation: "11C55C30",
+		secondaryObject: "03DB", //Old Pete
 	},
 	SHENZI: {
 		type: EnemyType.BOSS,
@@ -111,12 +109,12 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "The Beast",
 		value: "02CE",
+		secondaryObject: "001F", //Cogsworth
 	},
 	SARK: {
 		type: EnemyType.BOSS,
 		name: "Sark",
 		value: "035E",
-		secondaryObjectLocation: "11c4f850",
 	},
 	SARK_LARGE: {
 		type: EnemyType.BOSS,
@@ -127,7 +125,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Xaldin",
 		value: "03E5",
-		secondaryObjectLocation: "11c59ee4",
 	},
 	VOLCANIC_LORD: {
 		type: EnemyType.BOSS,
@@ -153,7 +150,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Hostile Program",
 		value: "04B8",
-		secondaryObjectLocation: "11c56570",
 	},
 	HAYNER: {
 		type: EnemyType.BOSS,
@@ -164,7 +160,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Prison Keeper",
 		value: "05CE",
-		secondaryObjectLocation: "11c54810",
 	},
 	THE_EXPERIMENT: {
 		type: EnemyType.BOSS,
@@ -175,7 +170,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Grim Reaper",
 		value: "010607",
-		secondaryObjectLocation: "11c5b784",
 	},
 	RIKU: {
 		type: EnemyType.BOSS,
@@ -191,7 +185,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Pete (Past)",
 		value: "0647",
-		secondaryObjectLocation: "11c56b70",
 	},
 	SEIFER: {
 		type: EnemyType.BOSS,
@@ -207,7 +200,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Pete (Olympus Coliseum; Part II)",
 		value: "06BC",
-		secondaryObjectLocation: "11c4fb48",
 	},
 	SAIX: {
 		type: EnemyType.BOSS,

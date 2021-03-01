@@ -1,6 +1,6 @@
 import { Enemies } from "../enemies";
-import { LocationName } from "../LocationName";
-import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
+import { EnemyLocation, EnemyLocationType } from "../types/EnemyLocation";
+import { LocationName } from "../types/LocationName";
 
 export const timelessRiverEnemyLocations: EnemyLocation[] = [
 	{
@@ -16,6 +16,7 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 				value: "11C576B4",
 			},
 		],
+		secondaryObjectValue: "11C56b70",
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
@@ -289,10 +290,11 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 		room: "03",
 		event: "35",
 		enemies: [
-			// {
-			// 	enemy: Enemies.PETE_TR,
-			// 	value: "11C55BF0",
-			// },
+			{
+				enemy: Enemies.PETE_TR,
+				value: "11C55BF0",
+			},
 		],
+		secondaryObjectValue: "11C55C30"
 	},
 ];

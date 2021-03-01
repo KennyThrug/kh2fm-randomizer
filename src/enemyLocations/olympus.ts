@@ -1,6 +1,6 @@
 import { Enemies } from "../enemies";
-import { LocationName } from "../LocationName";
-import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
+import { EnemyLocation, EnemyLocationType } from "../types/EnemyLocation";
+import { LocationName } from "../types/LocationName";
 
 export const olympusEnemyLocations: EnemyLocation[] = [
 	// {
@@ -148,6 +148,7 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 				value: "11C4EDF8",
 			},
 		],
+		secondaryObjectValue: "11c4d348",
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
@@ -201,16 +202,25 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 				value: "11C4FCF4",
 			},
 		],
+		secondaryObjectValue: "11c4fb48",
 		// Remove timer
 		// patch=1,EE,20349DEC,extended,00000001
 	},
-	// {
-	// 	type: EnemyLocationType.BOSS_FIGHT,
-	// 	location: LocationName.OLYMPUS,
-	// 	description: "Hydra Boss Fight",
-	// 	value: "11C566C4",
-	// 	enemy: Enemies.HYDRA,
-	// },
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.OLYMPUS,
+		description: "Hydra Boss Fight",
+		world: "06",
+		room: "12",
+		event: "01",
+		enemies: [
+			{
+				value: "11C566C4",
+				enemy: Enemies.HYDRA,
+			},
+		],
+		secondaryObjectValue: "11c567c4"
+	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.OLYMPUS,
@@ -361,6 +371,6 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 				value: "11C5C0B0",
 			},
 		],
-		secondaryObjectLocation: "11c5c0f0",
+		secondaryObjectValue: "11c5c0f0",
 	},
 ];

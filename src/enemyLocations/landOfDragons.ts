@@ -1,6 +1,6 @@
 import { Enemies } from "../enemies";
-import { LocationName } from "../LocationName";
-import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
+import { EnemyLocation, EnemyLocationType } from "../types/EnemyLocation";
+import { LocationName } from "../types/LocationName";
 
 export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 	{
@@ -631,7 +631,7 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 				value: "11C4C2A4",
 			},
 		],
-		secondaryObjectLocation: "11C4BEB0",
+		secondaryObjectValue: "11C4BEB0",
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
@@ -749,5 +749,6 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 				value: "11C4D324",
 			},
 		],
+		secondaryObjectValue: "11c4d450",
 	},
 ];

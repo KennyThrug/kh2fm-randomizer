@@ -1,6 +1,6 @@
 import seedrandom from "seedrandom";
 import { filterByWorld } from "../helpers/filterByWorld";
-import { LocationName } from "../LocationName";
+import { LocationName } from "../types/LocationName";
 import { absentSilhouettesRewardLocations } from "../rewardLocations/absentSilhouettes";
 import { agrabahRewardLocations } from "../rewardLocations/agrabah";
 import { atlanticaRewardLocations } from "../rewardLocations/atlantica";

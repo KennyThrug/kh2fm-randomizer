@@ -1,4 +1,4 @@
-import { LocationName } from "../LocationName";
+import { LocationName } from "../types/LocationName";
 import {
 	abilityLevels,
 	level50levels,

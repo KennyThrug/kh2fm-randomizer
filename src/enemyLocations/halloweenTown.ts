@@ -1,6 +1,6 @@
 import { Enemies } from "../enemies";
-import { LocationName } from "../LocationName";
-import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
+import { EnemyLocation, EnemyLocationType } from "../types/EnemyLocation";
+import { LocationName } from "../types/LocationName";
 
 export const halloweenTownEnemyLocations: EnemyLocation[] = [
 	{
@@ -140,6 +140,7 @@ export const halloweenTownEnemyLocations: EnemyLocation[] = [
 				value: "11C55570",
 			},
 		],
+		secondaryObjectValue: "11C54810",
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,

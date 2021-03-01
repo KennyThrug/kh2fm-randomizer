@@ -1,5 +1,5 @@
 import { shuffle } from "../helpers/shuffle";
-import { LocationName } from "../LocationName";
+import { LocationName } from "../types/LocationName";
 import { keybladeRewardLocations } from "../rewardLocations/keyblades";
 import { levels } from "../rewardLocations/levels";
 import { RewardLocationType } from "../rewardLocations/RewardLocation";

@@ -1,5 +1,5 @@
-import { Enemy } from "../enemies/Enemy";
-import { LocationName } from "../LocationName";
+import { Enemy } from "./Enemy";
+import { LocationName } from "./LocationName";
 import { GameMode } from "../settings/enums";
 
 export enum EnemyLocationType {
@@ -22,5 +22,5 @@ export interface EnemyLocation {
 	gameMode?: {
 		[K in GameMode]?: {};
 	};
-	secondaryObjectLocation?: string;
+	secondaryObjectValue?: string;
 }

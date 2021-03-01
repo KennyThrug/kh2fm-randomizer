@@ -14,7 +14,7 @@ import React, {
 } from "react";
 import { SeedContext } from "../../context/seed";
 import { analytics } from "../../firebase";
-import { LocationName } from "../../LocationName";
+import { LocationName } from "../../types/LocationName";
 import { RewardLocationType } from "../../rewardLocations/RewardLocation";
 
 interface Props {

@@ -1,6 +1,6 @@
 import { Enemies } from "../enemies";
-import { LocationName } from "../LocationName";
-import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
+import { EnemyLocation, EnemyLocationType } from "../types/EnemyLocation";
+import { LocationName } from "../types/LocationName";
 
 export const beastsCastleEnemyLocations: EnemyLocation[] = [
 	{
@@ -85,10 +85,10 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 		room: "0B",
 		event: "48",
 		enemies: [
-			// {
-			// 	enemy: Enemies.THRESHOLDER,
-			// 	value: "11C55204",
-			// },
+			{
+				enemy: Enemies.THRESHOLDER,
+				value: "11C55204",
+			},
 			// {
 			// 	enemy: Enemies.POSSESSOR,
 			// 	value: "11C55244",
@@ -142,16 +142,22 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 				value: "11C55570",
 			},
 		],
+		secondaryObjectValue: "11C55244",
 	},
 	{
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.BEASTS_CASTLE,
 		description: "Beast Boss Fight",
-		enemies : {
-			value: "11C4CBA0",
-			enemy: Enemies.THE_BEAST,
-		}
-		secondaryObjectLocation: "11C4CBE0",
+		world: "05",
+		room: "03",
+		event: "45",
+		enemies: [
+			{
+				value: "11C4CBA0",
+				enemy: Enemies.THE_BEAST,
+			},
+		],
+		secondaryObjectValue: "11C4CBE0",
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
@@ -205,6 +211,7 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 				value: "11C5A4D4",
 			},
 		],
+		secondaryObjectValue: "11C5A16C",
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
@@ -291,5 +298,6 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 				value: "11C5A0A8",
 			},
 		],
+		secondaryObjectValue: "11c59ee4",
 	},
 ];

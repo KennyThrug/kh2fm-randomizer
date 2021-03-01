@@ -1,4 +1,4 @@
-import { Enemy, EnemyType } from "../enemies/Enemy";
+import { Enemy, EnemyType } from "../types/Enemy";
 import { bosses, enemies, enemiesMap } from "../enemyLocations";
 import { earlyLionDash } from "../patches/earlyLionDash";
 import { expMultiplier } from "../patches/expMultiplier";

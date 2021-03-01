@@ -1,4 +1,4 @@
-import { LocationName } from "../LocationName";
+import { LocationName } from "../types/LocationName";
 import { RewardLocation } from "../rewardLocations/RewardLocation";
 import { Configuration } from "../settings/Configuration";
 import { RandomizingAction } from "../settings/enums";

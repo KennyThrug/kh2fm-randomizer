@@ -1,6 +1,6 @@
 import { Enemies } from "../enemies";
-import { LocationName } from "../LocationName";
-import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
+import { EnemyLocation, EnemyLocationType } from "../types/EnemyLocation";
+import { LocationName } from "../types/LocationName";
 
 export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 	{
@@ -16,6 +16,7 @@ export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 				value: "11C56530",
 			},
 		],
+		secondaryObjectValue: "11c56570",
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
@@ -220,6 +221,7 @@ export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 				value: "11C4FE04",
 			},
 		],
+		secondaryObjectValue: "11c4f850",
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,

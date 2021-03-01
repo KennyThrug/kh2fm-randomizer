@@ -1,6 +1,6 @@
 import { Enemies } from "../enemies";
-import { LocationName } from "../LocationName";
-import { EnemyLocation, EnemyLocationType } from "./EnemyLocation";
+import { EnemyLocation, EnemyLocationType } from "../types/EnemyLocation";
+import { LocationName } from "../types/LocationName";
 
 export const portRoyalEnemyLocations: EnemyLocation[] = [
 	// {
@@ -332,6 +332,7 @@ export const portRoyalEnemyLocations: EnemyLocation[] = [
 				value: "11C5BA78",
 			},
 		],
+		secondaryObjectValue: "11c5b784",
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
