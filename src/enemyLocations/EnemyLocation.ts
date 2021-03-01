@@ -22,4 +22,5 @@ export interface EnemyLocation {
 	gameMode?: {
 		[K in GameMode]?: {};
 	};
+	secondaryObjectLocation?: string;
 }

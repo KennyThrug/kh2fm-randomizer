@@ -10,4 +10,5 @@ export interface Enemy {
 	type: EnemyType;
 	name: string;
 	value: string;
+	secondaryObject?: string;
 }

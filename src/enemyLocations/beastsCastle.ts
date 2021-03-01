@@ -143,13 +143,16 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 			},
 		],
 	},
-	// {
-	// 	type: EnemyLocationType.BOSS_FIGHT,
-	// 	location: LocationName.BEASTS_CASTLE,
-	// 	description: "Beast Boss Fight",
-	// 	value: "11C4CBA0",
-	// 	enemy: Enemies.THE_BEAST,
-	// },
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.BEASTS_CASTLE,
+		description: "Beast Boss Fight",
+		enemies : {
+			value: "11C4CBA0",
+			enemy: Enemies.THE_BEAST,
+		}
+		secondaryObjectLocation: "11C4CBE0",
+	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
 	// 	location: LocationName.BEASTS_CASTLE,
