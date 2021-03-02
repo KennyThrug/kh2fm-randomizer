@@ -127,54 +127,54 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		room: "02",
 		event: "50",
 		enemies: [
-			{
-				enemy: Enemies.SHADOW,
-				value: "11C5B760",
-			},
-			{
-				enemy: Enemies.SHADOW,
-				value: "11C5B7A0",
-			},
-			{
-				enemy: Enemies.SHADOW,
-				value: "11C5B7E0",
-			},
-			{
-				enemy: Enemies.NIGHTWALKER,
-				value: "11C5B820",
-			},
-			{
-				enemy: Enemies.NIGHTWALKER,
-				value: "11C5B860",
-			},
-			{
-				enemy: Enemies.NIGHTWALKER,
-				value: "11C5B8A0",
-			},
-			{
-				enemy: Enemies.SHADOW,
-				value: "11C5B8E0",
-			},
-			{
-				enemy: Enemies.SHADOW,
-				value: "11C5B920",
-			},
-			{
-				enemy: Enemies.NIGHTWALKER,
-				value: "11C5B9CC",
-			},
-			{
-				enemy: Enemies.NIGHTWALKER,
-				value: "11C5BA0C",
-			},
-			{
-				enemy: Enemies.ASSAULT_RIDER,
-				value: "11C5BA4C",
-			},
-			{
-				enemy: Enemies.ASSAULT_RIDER,
-				value: "11C5BA8C",
-			},
+			// {
+			// 	enemy: Enemies.SHADOW,
+			// 	value: "11C5B760",
+			// },
+			// {
+			// 	enemy: Enemies.SHADOW,
+			// 	value: "11C5B7A0",
+			// },
+			// {
+			// 	enemy: Enemies.SHADOW,
+			// 	value: "11C5B7E0",
+			// },
+			// {
+			// 	enemy: Enemies.NIGHTWALKER,
+			// 	value: "11C5B820",
+			// },
+			// {
+			// 	enemy: Enemies.NIGHTWALKER,
+			// 	value: "11C5B860",
+			// },
+			// {
+			// 	enemy: Enemies.NIGHTWALKER,
+			// 	value: "11C5B8A0",
+			// },
+			// {
+			// 	enemy: Enemies.SHADOW,
+			// 	value: "11C5B8E0",
+			// },
+			// {
+			// 	enemy: Enemies.SHADOW,
+			// 	value: "11C5B920",
+			// },
+			// {
+			// 	enemy: Enemies.NIGHTWALKER,
+			// 	value: "11C5B9CC",
+			// },
+			// {
+			// 	enemy: Enemies.NIGHTWALKER,
+			// 	value: "11C5BA0C",
+			// },
+			// {
+			// 	enemy: Enemies.ASSAULT_RIDER,
+			// 	value: "11C5BA4C",
+			// },
+			// {
+			// 	enemy: Enemies.ASSAULT_RIDER,
+			// 	value: "11C5BA8C",
+			// },
 		],
 	},
 	{
@@ -558,6 +558,7 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Shan-Yu Boss Fight",
+		maxSize: 2631800, // Shan-Yu
 		world: "08",
 		room: "09",
 		event: "4B",
@@ -740,6 +741,7 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.LAND_OF_DRAGONS,
 		description: "Storm Rider Boss Fight",
+		maxSize: 4443212, // Larxene
 		world: "08",
 		room: "08",
 		event: "4F",

@@ -3,20 +3,36 @@ import { EnemyLocation, EnemyLocationType } from "../types/EnemyLocation";
 import { LocationName } from "../types/LocationName";
 
 export const olympusEnemyLocations: EnemyLocation[] = [
-	// {
-	// 	type: EnemyLocationType.BOSS_FIGHT,
-	// 	location: LocationName.OLYMPUS,
-	// 	description: "Hades Chamber Boss Fight",
-	// 	value: "11C48478",
-	// 	enemy: Enemies.HADES_I,
-	// },
-	// {
-	// 	type: EnemyLocationType.MOB_FIGHT,
-	// 	location: LocationName.OLYMPUS,
-	// 	description: "Hades Escape",
-	// 	value: "11C591FC",
-	// 	enemy: Enemies.HADES_I,
-	// },
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.OLYMPUS,
+		description: "Hades Chamber Boss Fight",
+		maxSize: 4443212, // Larxene
+		world: "06",
+		room: "06",
+		event: "70",
+		enemies: [
+			{
+				enemy: Enemies.HADES_I,
+				value: "11C48478"
+			}
+		]
+	},
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.OLYMPUS,
+		description: "Hades Escape",
+		maxSize: 2280296, // Hercules
+		world: "06",
+		room: "05",
+		event: "6F",
+		enemies: [
+			{
+				enemy: Enemies.HADES_ESCAPE,
+				value: "11C591FC"
+			}
+		]
+	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
 		location: LocationName.OLYMPUS,
@@ -139,6 +155,7 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Cerberus Boss Fight",
+		maxSize: 4443212, // Larxene
 		world: "06",
 		room: "07",
 		event: "72",
@@ -169,6 +186,7 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Pete II Boss Fight",
+		maxSize: 1642502, // Cloud
 		world: "06",
 		room: "08",
 		event: "74",
@@ -362,6 +380,7 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.OLYMPUS,
 		description: "Hades Boss Phase II",
+		maxSize: 2631800, // Shan-Yu
 		world: "06",
 		room: "0D",
 		event: "CA",
@@ -373,4 +392,76 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		],
 		secondaryObjectValue: "11c5c0f0",
 	},
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.OLYMPUS,
+		description: "Pain/Panic Round 10",
+		maxSize: 2314684, // Prison Keeper
+		world: "06",
+		room: "BD",
+		event: "0A",
+		enemies: [
+			{
+				enemy: Enemies.LEON,
+				value: "11C4DAC4"
+			},
+			{
+				enemy: Enemies.YUFFIE,
+				value: "11C4DA84"
+			}
+		]
+	},
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.OLYMPUS,
+		description: "Titan Round 10",
+		maxSize: 4443212, // Larxene
+		world: "06",
+		room: "BF",
+		event: "0A",
+		enemies: [
+			{
+				enemy: Enemies.HERCULES_CUPS,
+				value: "11C4FCD4"
+			}
+		]
+	},
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.OLYMPUS,
+		description: "Hades Paradox Round 10",
+		maxSize: 2314684, // Prison Keeper
+		world: "06",
+		room: "C4",
+		event: "0A",
+		enemies: [
+			{
+				enemy: Enemies.TIFA,
+				value: "11C5265C"
+			},
+			// {
+			// 	enemy: Enemies.YUFFIE,
+			// 	value: "11C4DA84"?????
+			// }
+		]
+	},
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.OLYMPUS,
+		description: "Hades Paradox Round 25",
+		maxSize: 2314684, // Prison Keeper
+		world: "06",
+		room: "C4",
+		event: "19",
+		enemies: [
+			// {
+			// 	enemy: Enemies.TIFA,
+			// 	value: "11C5265C"
+			// },
+			{
+				enemy: Enemies.CLOUD,
+				value: "11C53FF8"
+			}
+		]
+	}
 ];

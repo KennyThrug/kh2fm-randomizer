@@ -7,6 +7,7 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.TIMELESS_RIVER,
 		description: "Pete (Past) Boss Fight",
+		maxSize: 3252168, // Marluxia
 		world: "0D",
 		room: "01",
 		event: "3A",

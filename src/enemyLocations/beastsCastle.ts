@@ -93,14 +93,14 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 			// 	enemy: Enemies.POSSESSOR,
 			// 	value: "11C55244",
 			// },
-			{
-				enemy: Enemies.GARGOYLE_WARRIOR,
-				value: "11C552B0",
-			},
-			{
-				enemy: Enemies.GARGOYLE_KNIGHT,
-				value: "11C552F0",
-			},
+			// {
+			// 	enemy: Enemies.GARGOYLE_WARRIOR,
+			// 	value: "11C552B0",
+			// },
+			// {
+			// 	enemy: Enemies.GARGOYLE_KNIGHT,
+			// 	value: "11C552F0",
+			// },
 			{
 				enemy: Enemies.HOOK_BAT,
 				value: "11C55330",
@@ -202,6 +202,7 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.BEASTS_CASTLE,
 		description: "Dark Thorn Boss Fight",
+		maxSize: 2314684, // Prison Keeper
 		world: "05",
 		room: "05",
 		event: "4F",
@@ -289,6 +290,7 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.BEASTS_CASTLE,
 		description: "Xaldin Boss Fight",
+		maxSize: 2854684, // Terra
 		world: "05",
 		room: "0F",
 		event: "52",

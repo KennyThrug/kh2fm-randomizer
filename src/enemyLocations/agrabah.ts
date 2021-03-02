@@ -405,6 +405,7 @@ export const agrabahEnemyLocations: EnemyLocation[] = [
 		type: EnemyLocationType.BOSS_FIGHT,
 		location: LocationName.AGRABAH,
 		description: "Twin Lords Boss Fight",
+		maxSize: 2314684, // Prison Keeper
 		world: "07",
 		room: "03",
 		event: "3B",

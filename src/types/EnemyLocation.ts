@@ -12,12 +12,25 @@ export interface EnemyLocation {
 	type: EnemyLocationType;
 	location: LocationName;
 	description: string;
+	maxSize?: number;
 	world: string;
 	room: string;
-	event: string;
+	event?: string;
+	eventGroup?: string[];
 	enemies: {
 		enemy: Enemy;
+		maxSize?: number;
 		value: string;
+		world?: string;
+		room?: string;
+		event?: string;
+		patches?: {
+			// patches which are applied to every boss that is placed here (ie marluxia's room)
+			all: {
+				name: string;
+				codes: string[];
+			}[]
+		};
 	}[];
 	gameMode?: {
 		[K in GameMode]?: {};
