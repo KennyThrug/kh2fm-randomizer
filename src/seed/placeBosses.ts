@@ -79,6 +79,9 @@ export const placeBosses = (seed: string) => {
 							if (newboss.enemy.size)
 								if (newboss.enemy.size > oldboss.maxSize) 
 									return false
+						if (newboss.enemy.secondaryObject !== undefined)
+							if (oldboss.enemy.secondaryObjectLocation === undefined)
+								return false;
 						return true
 					}), seed)]
 				}

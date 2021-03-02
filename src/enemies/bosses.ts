@@ -1,40 +1,5 @@
 import { EnemyType } from "../types/Enemy";
 
-const singleBosses = [
-				"Axel II",
-				"Volcanic Lord",
-				"Blizzard Lord",
-				"Scar",
-				"Experiment",
-				"Roxas",
-				"Xigbar",
-				"Saix",
-				"Armored Xemnas I",
-				"Armored Xemnas II",
-				"Sephiroth",
-				"Lingering Will (Terra)",
-				"Xigbar (Data)",
-				"Xaldin (Data)",
-				"Vexen (Absent Silhouette)",
-				"Vexen (Data)",
-				"Lexaeus (Absent Silhouette)",
-				"Lexaeus (Data)",
-				"Zexion (Absent Silhouette)",
-				"Zexion (Data)",
-				"Saïx (Data)",
-				"Axel (Data)",
-				"Larxene (Absent Silhouette)",
-				"Larxene (Data)",
-				"Marluxia (Absent Silhouette)",
-				"Marluxia (Data)",
-				"Roxas (Data)",
-				"Leon",
-				"Yuffie",
-				"Hercules (Titan Cup/Titan Paradox Cup)",
-				"Tifa",
-				"Cloud",
-];
-
 export const bosses = {
 	SHAN_YU: {
 		size: 2631800,
@@ -102,9 +67,6 @@ export const bosses = {
 		value: "015E",
 		secondaryObject: "01016A", //Hercules w/Aura Sphere
 		secondaryObjectLocation: "11c5c0f0",
-		rules: {
-			bannedFrom: singleBosses
-		}
 	},
 	CERBERUS: {
 		size: 2494584,
@@ -121,7 +83,7 @@ export const bosses = {
 		secondaryObject: "039A", //Hydra Head
 		secondaryObjectLocation: "11c567c4",
 		rules: {
-			bannedFrom: singleBosses.concat(
+			bannedFrom: [
 				"Shan-Yu",
 				"Thresholder",
 				"Beast",
@@ -131,7 +93,7 @@ export const bosses = {
 				"Grim Reaper I",
 				"Hades (2nd Visit & Hades Paradox Cup Battle)",
 				"Sark",
-			)
+			]
 		}
 	},
 	THRESHOLDER: {
@@ -141,9 +103,6 @@ export const bosses = {
 		value: "0161",
 		secondaryObject: "0164", //Posessor
 		secondaryObjectLocation: "11C55244",
-		rules:{
-			bannedFrom: singleBosses
-		}
 	},
 	DARK_THORN: {
 		size: 2177276,
@@ -179,12 +138,12 @@ export const bosses = {
 		secondaryObject: "03DB", //Old Pete
 		secondaryObjectLocation: "11C55C30",
 		rules:{
-			bannedFrom:singleBosses.concat(
+			bannedFrom:[
 				"Hades (escape)",
 				"Pete (Past)",
 				"Storm Rider",
 				"Experiment",
-			)
+			]
 		}
 	},
 	SHENZI: {
@@ -218,9 +177,6 @@ export const bosses = {
 		value: "02CE",
 		secondaryObject: "001F", //Cogsworth
 		secondaryObjectLocation: "11C4CBE0",
-		rules:{
-			bannedFrom: singleBosses
-		}
 	},
 	SARK: {
 		size: 933824,

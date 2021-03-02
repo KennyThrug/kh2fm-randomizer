@@ -1,7 +1,7 @@
 import { Enemy } from "../types/Enemy";
 import { createLine } from "../helpers/createLine";
 
-export const makeSecondaryObject = (
+export const placeSecondaryBossObject = (
     location : Enemy,
     boss : Enemy
 ) : string => {
