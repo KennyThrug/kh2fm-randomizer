@@ -32,6 +32,7 @@ import {
 } from "../settings/enums";
 import { createLine } from "./createLine";
 import { shuffle } from "./shuffle";
+import { makeSecondaryObject } from "../enemies/makeSecondaryObject";
 
 export const createPnach = (seed: Seed, configuration: Configuration) => {
 	const patches: string[] = [`// ${configuration.name}`];
@@ -112,6 +113,7 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 		if (configuration.experimental.enemies === Toggle.ON) {
 			for (const location of enemies) {
+				
 				const one = `patch=1,EE,E0${(location.enemies.length + 3)
 					.toString(16)
 					.padStart(2, "0")
@@ -187,12 +189,12 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 					const modifierAddress = (parseInt(curr.value, 16) + 32).toString(16);
 					const modifier =
 						enemy.value.length === 6 ? enemy.value.substring(0, 2) : "";
-
 					return (
 						prev +
 						createLine(curr.value, enemy.value, false) +
 						` // ${enemy.name} (was ${curr.enemy.name})\n` +
-						createLine(modifierAddress, modifier)
+						createLine(modifierAddress, modifier) +
+						makeSecondaryObject(location,enemy)
 					);
 				}, one + two + three + four);
 
