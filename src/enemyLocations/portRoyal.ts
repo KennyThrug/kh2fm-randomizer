@@ -333,7 +333,6 @@ export const portRoyalEnemyLocations: EnemyLocation[] = [
 				value: "11C5BA78",
 			},
 		],
-		secondaryObjectValue: "11c5b784",
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,

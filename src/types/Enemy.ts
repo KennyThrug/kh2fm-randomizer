@@ -12,6 +12,7 @@ export interface Enemy {
 	value: string;
 	size?: number;
 	secondaryObject?: string;
+	secondaryObjectLocation?: string;
 	rules?: {
 		bannedFrom?: string[];
 	};

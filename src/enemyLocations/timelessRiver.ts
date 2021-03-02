@@ -17,7 +17,6 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 				value: "11C576B4",
 			},
 		],
-		secondaryObjectValue: "11C56b70",
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
@@ -296,6 +295,5 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 				value: "11C55BF0",
 			},
 		],
-		secondaryObjectValue: "11C55C30"
 	},
 ];

@@ -632,7 +632,6 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 				value: "11C4C2A4",
 			},
 		],
-		secondaryObjectValue: "11C4BEB0",
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
@@ -751,6 +750,5 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 				value: "11C4D324",
 			},
 		],
-		secondaryObjectValue: "11c4d450",
 	},
 ];

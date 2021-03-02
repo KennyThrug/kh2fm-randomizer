@@ -141,7 +141,6 @@ export const halloweenTownEnemyLocations: EnemyLocation[] = [
 				value: "11C55570",
 			},
 		],
-		secondaryObjectValue: "11C54810",
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,

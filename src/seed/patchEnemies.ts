@@ -1,5 +1,6 @@
 import { createLine } from "../helpers/createLine";
 import { createJoker } from "../helpers/createJoker";
+import { makeSecondaryObject } from "../enemies/makeSecondaryObject"
 export const patchEnemies = (enemymap: any[], world: string, room: string, event: string) => {
     var comment = "// "
     var codes = []
@@ -21,8 +22,9 @@ export const patchEnemies = (enemymap: any[], world: string, room: string, event
             const modifierAddress  = (parseInt(oldenemy.value, 16) + 32).toString(16);
             const modifier =
                 newValue.length === 6 ? newValue.substring(0, 2) : "";
-            codes.push(createLine(oldenemy.value, newValue, false))
-            codes.push(createLine(modifierAddress, modifier, false))
+            codes.push(createLine(oldenemy.value, newValue, false));
+            codes.push(createLine(modifierAddress, modifier, false));
+            codes.push(makeSecondaryObject(oldenemy.enemy,newenemy.enemy));
             const sourcePatches = oldenemy.patches
             if (sourcePatches) {
                 if (sourcePatches.all) {

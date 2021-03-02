@@ -1,5 +1,40 @@
 import { EnemyType } from "../types/Enemy";
 
+const singleBosses = [
+				"Axel II",
+				"Volcanic Lord",
+				"Blizzard Lord",
+				"Scar",
+				"Experiment",
+				"Roxas",
+				"Xigbar",
+				"Saix",
+				"Armored Xemnas I",
+				"Armored Xemnas II",
+				"Sephiroth",
+				"Lingering Will (Terra)",
+				"Xigbar (Data)",
+				"Xaldin (Data)",
+				"Vexen (Absent Silhouette)",
+				"Vexen (Data)",
+				"Lexaeus (Absent Silhouette)",
+				"Lexaeus (Data)",
+				"Zexion (Absent Silhouette)",
+				"Zexion (Data)",
+				"Saïx (Data)",
+				"Axel (Data)",
+				"Larxene (Absent Silhouette)",
+				"Larxene (Data)",
+				"Marluxia (Absent Silhouette)",
+				"Marluxia (Data)",
+				"Roxas (Data)",
+				"Leon",
+				"Yuffie",
+				"Hercules (Titan Cup/Titan Paradox Cup)",
+				"Tifa",
+				"Cloud",
+];
+
 export const bosses = {
 	SHAN_YU: {
 		size: 2631800,
@@ -57,7 +92,7 @@ export const bosses = {
 		name: "Hades (Escape)",
 		value: "0812",
 		rules: {
-			useWhenReplacing: "090E"
+			useWhenReplacing: "090E",
 		}
 	},
 	HADES_II: {
@@ -66,12 +101,17 @@ export const bosses = {
 		name: "Hades (2nd Visit & Hades Paradox Cup Battle)",
 		value: "015E",
 		secondaryObject: "01016A", //Hercules w/Aura Sphere
+		secondaryObjectLocation: "11c5c0f0",
+		rules: {
+			bannedFrom: singleBosses
+		}
 	},
 	CERBERUS: {
 		size: 2494584,
 		type: EnemyType.BOSS,
 		name: "Cerberus",
 		value: "015F",
+		secondaryObjectLocation: "11c4d348",
 	},
 	HYDRA: {
 		size: 2417732,
@@ -79,6 +119,20 @@ export const bosses = {
 		name: "Hydra",
 		value: "0160",
 		secondaryObject: "039A", //Hydra Head
+		secondaryObjectLocation: "11c567c4",
+		rules: {
+			bannedFrom: singleBosses.concat(
+				"Shan-Yu",
+				"Thresholder",
+				"Beast",
+				"Pete (Olympus Coliseum; Part II)",
+				"Pete (Past)",
+				"Xaldin",
+				"Grim Reaper I",
+				"Hades (2nd Visit & Hades Paradox Cup Battle)",
+				"Sark",
+			)
+		}
 	},
 	THRESHOLDER: {
 		size: 1426680,
@@ -86,12 +140,17 @@ export const bosses = {
 		name: "Thresholder",
 		value: "0161",
 		secondaryObject: "0164", //Posessor
+		secondaryObjectLocation: "11C55244",
+		rules:{
+			bannedFrom: singleBosses
+		}
 	},
 	DARK_THORN: {
 		size: 2177276,
 		type: EnemyType.BOSS,
 		name: "Dark Thorn",
 		value: "0162",
+		secondaryObjectLocation: "11C5A16C",
 	},
 	SHADOW_STALKER: {
 		type: EnemyType.BOSS,
@@ -110,6 +169,7 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Storm Rider",
 		value: "0165",
+		secondaryObjectLocation: "11c4d450",
 	},
 	PETE_TR: {
 		size: 968770,
@@ -117,6 +177,15 @@ export const bosses = {
 		name: "Pete (Timeless River)",
 		value: "0167",
 		secondaryObject: "03DB", //Old Pete
+		secondaryObjectLocation: "11C55C30",
+		rules:{
+			bannedFrom:singleBosses.concat(
+				"Hades (escape)",
+				"Pete (Past)",
+				"Storm Rider",
+				"Experiment",
+			)
+		}
 	},
 	SHENZI: {
 		size: 799588,
@@ -148,12 +217,17 @@ export const bosses = {
 		name: "The Beast",
 		value: "02CE",
 		secondaryObject: "001F", //Cogsworth
+		secondaryObjectLocation: "11C4CBE0",
+		rules:{
+			bannedFrom: singleBosses
+		}
 	},
 	SARK: {
 		size: 933824,
 		type: EnemyType.BOSS,
 		name: "Sark",
 		value: "035E",
+		secondaryObjectLocation: "11c4f850",
 	},
 	SARK_LARGE: {
 		size: 0, // unknown
@@ -166,6 +240,7 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Xaldin",
 		value: "03E5",
+		secondaryObjectLocation: "11c59ee4",
 	},
 	VOLCANIC_LORD: {
 		size: 1720178,
@@ -194,6 +269,7 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Hostile Program",
 		value: "04B8",
+		secondaryObjectLocation: "11c56570",
 		rules: {
 			bannedFrom: [
 				"Shan-Yu" // His meter messes with the door meter
@@ -211,6 +287,7 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Prison Keeper",
 		value: "05CE",
+		secondaryObjectLocation: "11C54810",
 		rules: {
 			bannedFrom: [
 				"Vexen (Absent Silhouette)", // crash reported
@@ -229,6 +306,7 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Grim Reaper",
 		value: "010607",
+		secondaryObjectLocation: "11c5b784",
 	},
 	RIKU: {
 		size: 755026,
@@ -247,6 +325,7 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Pete (Past)",
 		value: "0647",
+		secondaryObjectLocation: "11C56b70",
 	},
 	SEIFER: {
 		size: 939680,
@@ -265,6 +344,7 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Pete (Olympus Coliseum; Part II)",
 		value: "06BC",
+		secondaryObjectLocation: "11c4fb48",
 		rules: {
 			bannedFrom: [
 				"Armor Xemnas" // Gets stuck in infinite loop
@@ -276,6 +356,7 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Saix",
 		value: "06C9",
+		secondaryObjectLocation: "11C4BEB0",
 		rules: {
 			bannedFrom: [
 				"Shan-Yu" // meter messes with door meter
@@ -538,6 +619,15 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Zexion (Absent Silhouette)",
 		value: "097B",
+		rules: {
+			bannedFrom:[
+				"Hades (Escape)",
+				"Pete (Past)",
+				"Pete (Timeless River)",
+				"Prison Keeper",
+				"Scar",
+			]
+		}
 	},
 	AXEL_DATA: {
 		size: 2742180,

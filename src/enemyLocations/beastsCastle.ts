@@ -142,7 +142,6 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 				value: "11C55570",
 			},
 		],
-		secondaryObjectValue: "11C55244",
 	},
 	{
 		type: EnemyLocationType.BOSS_FIGHT,
@@ -157,7 +156,6 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 				enemy: Enemies.THE_BEAST,
 			},
 		],
-		secondaryObjectValue: "11C4CBE0",
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
@@ -212,7 +210,6 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 				value: "11C5A4D4",
 			},
 		],
-		secondaryObjectValue: "11C5A16C",
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
@@ -300,6 +297,5 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 				value: "11C5A0A8",
 			},
 		],
-		secondaryObjectValue: "11c59ee4",
 	},
 ];

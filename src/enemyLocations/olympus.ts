@@ -165,7 +165,6 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 				value: "11C4EDF8",
 			},
 		],
-		secondaryObjectValue: "11c4d348",
 	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
@@ -220,7 +219,6 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 				value: "11C4FCF4",
 			},
 		],
-		secondaryObjectValue: "11c4fb48",
 		// Remove timer
 		// patch=1,EE,20349DEC,extended,00000001
 	},
@@ -237,7 +235,6 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 				enemy: Enemies.HYDRA,
 			},
 		],
-		secondaryObjectValue: "11c567c4"
 	},
 	{
 		type: EnemyLocationType.MOB_FIGHT,
@@ -390,7 +387,6 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 				value: "11C5C0B0",
 			},
 		],
-		secondaryObjectValue: "11c5c0f0",
 	},
 	{
 		type: EnemyLocationType.BOSS_FIGHT,
