@@ -1,6 +1,6 @@
 import { createLine } from "../helpers/createLine";
 import { createJoker } from "../helpers/createJoker";
-import { placeSecondaryBossObject } from "./placeSecondaryBossObject"
+import { placeSecondaryBossObject } from "./bossFixes"
 export const patchEnemies = (enemymap: any[], world: string, room: string, event: string) => {
     var comment = "// "
     var codes = []

@@ -16,4 +16,7 @@ export interface Enemy {
 	rules?: {
 		bannedFrom?: string[];
 	};
+	aiLocations?: {
+		demyx? : string;
+	}
 }

@@ -23,3 +23,25 @@ export const placeSecondaryBossObject = (
     }
     return "";
 }
+//This whole Function doesn't really work... I thought it did, then I did testing.
+//I think I can get this to work, but I really don't know
+// - Thrug
+// export const aiFixes = (
+//     location : Enemy,
+//     boss : Enemy
+// ) : string => {
+//     switch(boss.name){
+//         case "Demyx (Hollow Bastion)":{
+//             return (
+//                 createLine(location.aiLocations?.demyx + "","00000074") +
+//                 createLine((parseInt(location.aiLocations?.demyx +"",16)+4).toString(16),"00000000") +
+//                 createLine((parseInt(location.aiLocations?.demyx +"",16)+8).toString(16),"00000000") +
+//                 createLine((parseInt(location.aiLocations?.demyx +"",16)+28).toString(16),"00000000") +
+//                 createLine((parseInt(location.aiLocations?.demyx +"",16)+32).toString(16),"00000000") +
+//                 + "");
+//         }
+//         default: {
+//             return "";
+//         }
+//     }
+//}

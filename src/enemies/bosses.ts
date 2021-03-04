@@ -49,7 +49,8 @@ export const bosses = {
 		value: "015D",
 		rules: {
 			useWhenReplacing: "090E"
-		}
+		},
+		secondaryObjectLocation: "11C48578",
 	},
 	HADES_ESCAPE: {
 		size: 2351052,
@@ -86,13 +87,14 @@ export const bosses = {
 			bannedFrom: [
 				"Shan-Yu",
 				"Thresholder",
-				"Beast",
+				"The Beast",
 				"Pete (Olympus Coliseum; Part II)",
 				"Pete (Past)",
 				"Xaldin",
 				"Grim Reaper I",
 				"Hades (2nd Visit & Hades Paradox Cup Battle)",
 				"Sark",
+				//For all Bans the Hydra's Head Teleports out of bounds
 			]
 		}
 	},
@@ -312,7 +314,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Saix",
 		value: "06C9",
-		secondaryObjectLocation: "11C4BEB0",
 		rules: {
 			bannedFrom: [
 				"Shan-Yu" // meter messes with door meter
@@ -577,6 +578,7 @@ export const bosses = {
 		value: "097B",
 		rules: {
 			bannedFrom:[
+				//Teleports OOB
 				"Hades (Escape)",
 				"Pete (Past)",
 				"Pete (Timeless River)",
