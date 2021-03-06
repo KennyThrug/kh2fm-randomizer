@@ -11,12 +11,17 @@ export interface Enemy {
 	name: string;
 	value: string;
 	size?: number;
-	secondaryObject?: string;
-	secondaryObjectLocation?: string;
 	rules?: {
 		bannedFrom?: string[];
 	};
-	aiLocations?: {
-		demyx? : string;
-	}
+	fixes?: {
+		secondaryObject?: {
+			value : string;
+			name : string;
+		},
+		secondaryObjectLocation?: {
+			value : string;
+			name : string;
+		};
+	};
 }

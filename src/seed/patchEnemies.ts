@@ -5,12 +5,11 @@ export const patchEnemies = (enemymap: any[], world: string, room: string, event
     var comment = "// "
     var codes = []
 
-
     for (var index = 0; index < enemymap.length; index++) {
         const replacement = enemymap[index]
         const oldenemy = replacement.old
         const newenemy = replacement.new
-        comment += `${newenemy.enemy.name} (was ${oldenemy.enemy.name}), `
+        comment += `${newenemy.enemy.name} (was ${oldenemy.enemy.name})`
         if (oldenemy !== newenemy) {
             var newValue = newenemy.enemy.value
 
@@ -24,7 +23,10 @@ export const patchEnemies = (enemymap: any[], world: string, room: string, event
                 newValue.length === 6 ? newValue.substring(0, 2) : "";
             codes.push(createLine(oldenemy.value, newValue, false));
             codes.push(createLine(modifierAddress, modifier, false));
-            codes.push(placeSecondaryBossObject(oldenemy.enemy,newenemy.enemy));
+            if(newenemy.enemy.fixes !== undefined && newenemy.enemy.fixes.secondaryObject !== undefined){
+                placeSecondaryBossObject(codes,oldenemy.enemy,newenemy.enemy);
+                comment += `\n//${newenemy.enemy.fixes?.secondaryObject?.name} (was ${oldenemy.enemy.fixes?.secondaryObjectLocation?.name})`
+            }
             const sourcePatches = oldenemy.patches
             if (sourcePatches) {
                 if (sourcePatches.all) {
@@ -48,5 +50,5 @@ export const patchEnemies = (enemymap: any[], world: string, room: string, event
             }
         }
     }
-    return comment.substr(0,comment.length-2) + "\n" + createJoker(codes, world, room, event).join("\n") + "\n"
+    return comment + "\n" + createJoker(codes, world, room, event).join("\n") + "\n";
 }

@@ -1,5 +1,5 @@
 import { shuffle } from "src/helpers/shuffle";
-import { bosses } from "../enemyLocations";
+import { bosses} from "../enemyLocations";
 
 export const placeBosses = (seed: string) => {
 	const attemptPlacing = (availableLocations: any[], availableBosses: any[]) => {
@@ -79,8 +79,8 @@ export const placeBosses = (seed: string) => {
 							if (newboss.enemy.size)
 								if (newboss.enemy.size > oldboss.maxSize) 
 									return false
-						if (newboss.enemy.secondaryObject !== undefined)
-							if (oldboss.enemy.secondaryObjectLocation === undefined)
+						if (newboss.enemy.fixes?.secondaryObject !== undefined)
+							if (oldboss.enemy.fixes?.secondaryObjectLocation === undefined)
 								return false;
 						return true
 					}), seed)]

@@ -24,7 +24,6 @@ export interface EnemyLocation {
 		world?: string;
 		room?: string;
 		event?: string;
-		secondaryObjectLocation?: string;
 		patches?: {
 			// patches which are applied to every boss that is placed here (ie marluxia's room)
 			all: {
