@@ -15,6 +15,11 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.PETE_PAST,
 				value: "11C576B4",
+				
+				secondaryObjectLocation: {
+					name: "Puzzle Piece (Pier)",
+					value: "11C56b70",
+				},
 			},
 		],
 	},
@@ -293,6 +298,11 @@ export const timelessRiverEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.PETE_TR,
 				value: "11C55BF0",
+
+				secondaryObjectLocation : {
+					name: "Old Pete (Ally)",
+					value: "11C55C30",
+				},
 			},
 		],
 	},

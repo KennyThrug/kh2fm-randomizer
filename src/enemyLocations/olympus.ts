@@ -14,9 +14,14 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		enemies: [
 			{
 				enemy: Enemies.HADES_I,
-				value: "11C48478"
+				value: "11C48478",
+
+				secondaryObjectLocation : {
+					name: "Auron (KO)",
+					value: "11C48578",
+				},
 			}
-		]
+		],
 	},
 	{
 		type: EnemyLocationType.BOSS_FIGHT,
@@ -163,6 +168,11 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.CERBERUS,
 				value: "11C4EDF8",
+
+				secondaryObjectLocation : {
+					name: "A Pole",
+					value: "11c4d348",
+				},
 			},
 		],
 	},
@@ -193,6 +203,11 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.PETE_OC_II,
 				value: "11C4FB08",
+
+				secondaryObjectLocation : {
+					name: "Hercules (Ally)",
+					value: "11c4fb48",
+				},
 			},
 			{
 				enemy: Enemies.TRICK_GHOST,
@@ -233,6 +248,11 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 			{
 				value: "11C566C4",
 				enemy: Enemies.HYDRA,
+
+				secondaryObjectLocation : {
+					name: "Phil",
+					value: "11c567c4",
+				},
 			},
 		],
 	},
@@ -385,6 +405,11 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.HADES_II,
 				value: "11C5C0B0",
+
+				secondaryObjectLocation: {
+					name: "Hercules w/ Aura Sphere",
+					value: "11c5c0f0",
+				},
 			},
 		],
 	},

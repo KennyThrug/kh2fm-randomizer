@@ -48,14 +48,8 @@ export const bosses = {
 		name: "Hades (1st Visit - Hades' Chamber)",
 		value: "015D",
 		rules: {
-			useWhenReplacing: "090E"
+			useWhenReplacing: "090E",
 		},
-		fixes : {
-			secondaryObjectLocation : {
-				name: "Auron (KO)",
-				value: "11C48578",
-			}
-		}
 	},
 	HADES_ESCAPE: {
 		size: 2351052,
@@ -71,43 +65,25 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Hades (2nd Visit & Hades Paradox Cup Battle)",
 		value: "015E",
-		fixes: {
-			secondaryObjectLocation: {
-				name: "Hercules w/ Aura Sphere",
-				value: "11c5c0f0",
-			},
-			secondaryObject: {
-				name: "Hercules w/ Aura Sphere",
-				value: "01016A",
-			},
-		}
+		secondaryObject: {
+			name: "Hercules w/ Aura Sphere",
+			value: "01016A",
+		},
 	},
 	CERBERUS: {
 		size: 2494584,
 		type: EnemyType.BOSS,
 		name: "Cerberus",
 		value: "015F",
-		fixes : {
-			secondaryObjectLocation : {
-				name: "A Pole",
-				value: "11c4d348",
-			},
-		},
 	},
 	HYDRA: {
 		size: 2417732,
 		type: EnemyType.BOSS,
 		name: "Hydra",
 		value: "0160",
-		fixes: {
-			secondaryObjectLocation : {
-				name: "Phil",
-				value: "11c567c4",
-			},
-			secondaryObject: {
-				name: "Hydra's Head",
-				value: "039A",
-			},
+		secondaryObject: {
+			name: "Hydra's Head",
+			value: "039A",
 		},
 		rules: {
 			bannedFrom: [
@@ -129,15 +105,9 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Thresholder",
 		value: "0161",
-		fixes: {
-			secondaryObjectLocation: {
-				name: "Posessor",
-				value: "11C55244",
-			},
-			secondaryObject: {
-				name: "Posessor",
-				value: "0164",
-			},
+		secondaryObject: {
+			name: "Posessor",
+			value: "0164",
 		},
 	},
 	DARK_THORN: {
@@ -145,12 +115,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Dark Thorn",
 		value: "0162",
-		fixes : {
-			secondaryObjectLocation: {
-				name: "Chandelier",
-				value: "11C5A16C",
-			},
-		},
 	},
 	SHADOW_STALKER: {
 		type: EnemyType.BOSS,
@@ -169,27 +133,15 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Storm Rider",
 		value: "0165",
-		fixes : {
-			secondaryObjectLocation : {
-				name: "Wind",
-				value: "11c4d450",
-			}
-		}
 	},
 	PETE_TR: {
 		size: 968770,
 		type: EnemyType.BOSS,
 		name: "Pete (Timeless River)",
 		value: "0167",
-		fixes : {
-			secondaryObjectLocation : {
-				name: "Old Pete (Ally)",
-				value: "11C55C30",
-			},
-			secondaryObject: {
-				name: "Old Pete (Ally)",
-				value: "03DB",
-			},
+		secondaryObject: {
+			name: "Old Pete (Ally)",
+			value: "03DB",
 		},
 		rules:{
 			bannedFrom:[
@@ -229,15 +181,9 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "The Beast",
 		value: "02CE",
-		fixes: {
-			secondaryObjectLocation: {
-				name: "Cogsworth",
-				value: "11C4CBE0",
-			},
-			secondaryObject: {
-				name: "Cogsworth",
-				value: "001F",
-			},
+		secondaryObject: {
+			name: "Cogsworth",
+			value: "001F",
 		},
 	},
 	SARK: {
@@ -245,12 +191,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Sark",
 		value: "035E",
-		fixes: {
-			secondaryObjectLocation : {
-				name: "Puzzle Piece (MCP's Room)",
-				value: "11c4f850",
-			}
-		}
 	},
 	SARK_LARGE: {
 		size: 0, // unknown
@@ -263,12 +203,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Xaldin",
 		value: "03E5",
-		fixes : {
-			secondaryObjectLocation :{
-				name: "Puzzle Piece (Xaldin's Room)",
-				value: "11c59ee4",
-			},
-		},
 	},
 	VOLCANIC_LORD: {
 		size: 1720178,
@@ -297,12 +231,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Hostile Program",
 		value: "04B8",
-		fixes : {
-			secondaryObjectLocation : {
-				name: "Data Orbs",
-				value: "11c56570",
-			},
-		},
 		rules: {
 			bannedFrom: [
 				"Shan-Yu" // His meter messes with the door meter
@@ -320,12 +248,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Prison Keeper",
 		value: "05CE",
-		fixes :{
-			secondaryObjectLocation : {
-				name: "Puzzle Piece (Hill)",
-				value: "11C54810",
-			},
-		},
 		rules: {
 			bannedFrom: [
 				"Vexen (Absent Silhouette)", // crash reported
@@ -344,12 +266,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Grim Reaper",
 		value: "010607",
-		fixes: {
-			secondaryObjectLocation : {
-				name : "Puzzle Piece (Black Pearl)",
-				value: "11c5b784",
-			},
-		},
 	},
 	RIKU: {
 		size: 755026,
@@ -368,12 +284,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Pete (Past)",
 		value: "0647",
-		fixes : {
-			secondaryObjectLocation: {
-				name: "Puzzle Piece (Pier)",
-				value: "11C56b70",
-			},
-		},
 	},
 	SEIFER: {
 		size: 939680,
@@ -392,12 +302,6 @@ export const bosses = {
 		type: EnemyType.BOSS,
 		name: "Pete (Olympus Coliseum; Part II)",
 		value: "06BC",
-		fixes : {
-			secondaryObjectLocation : {
-				name: "Hercules (Ally)",
-				value: "11c4fb48",
-			},
-		},
 		rules: {
 			bannedFrom: [
 				"Armor Xemnas" // Gets stuck in infinite loop

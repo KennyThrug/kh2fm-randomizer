@@ -18,15 +18,16 @@ export const patchEnemies = (enemymap: any[], world: string, room: string, event
                     newValue = newenemy.enemy.rules.useWhenReplacing
                 }
             }
+            if(newenemy.enemy.secondaryObject !== undefined){
+                
+                placeSecondaryBossObject(codes,oldenemy,newenemy.enemy);
+                comment += `\n//${newenemy.enemy.secondaryObject?.name} (was ${oldenemy.secondaryObjectLocation?.name})`
+            }
             const modifierAddress  = (parseInt(oldenemy.value, 16) + 32).toString(16);
             const modifier =
                 newValue.length === 6 ? newValue.substring(0, 2) : "";
             codes.push(createLine(oldenemy.value, newValue, false));
             codes.push(createLine(modifierAddress, modifier, false));
-            if(newenemy.enemy.fixes !== undefined && newenemy.enemy.fixes.secondaryObject !== undefined){
-                placeSecondaryBossObject(codes,oldenemy.enemy,newenemy.enemy);
-                comment += `\n//${newenemy.enemy.fixes?.secondaryObject?.name} (was ${oldenemy.enemy.fixes?.secondaryObjectLocation?.name})`
-            }
             const sourcePatches = oldenemy.patches
             if (sourcePatches) {
                 if (sourcePatches.all) {

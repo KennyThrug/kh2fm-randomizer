@@ -88,6 +88,11 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.THRESHOLDER,
 				value: "11C55204",
+
+				secondaryObjectLocation: {
+					name: "Posessor",
+					value: "11C55244",
+				},
 			},
 			// {
 			// 	enemy: Enemies.POSSESSOR,
@@ -154,6 +159,11 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 			{
 				value: "11C4CBA0",
 				enemy: Enemies.THE_BEAST,
+
+				secondaryObjectLocation: {
+					name: "Cogsworth",
+					value: "11C4CBE0",
+				},
 			},
 		],
 	},
@@ -208,6 +218,11 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.DARK_THORN,
 				value: "11C5A4D4",
+
+				secondaryObjectLocation: {
+					name: "Chandelier",
+					value: "11C5A16C",
+				},
 			},
 		],
 	},
@@ -295,6 +310,11 @@ export const beastsCastleEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.XALDIN,
 				value: "11C5A0A8",
+
+				secondaryObjectLocation :{
+					name: "Puzzle Piece (Xaldin's Room)",
+					value: "11c59ee4",
+				},
 			},
 		],
 	},

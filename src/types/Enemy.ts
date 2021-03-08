@@ -14,14 +14,8 @@ export interface Enemy {
 	rules?: {
 		bannedFrom?: string[];
 	};
-	fixes?: {
-		secondaryObject?: {
-			value : string;
-			name : string;
-		},
-		secondaryObjectLocation?: {
-			value : string;
-			name : string;
-		};
+	secondaryObject?: {
+		value : string;
+		name : string;
 	};
 }

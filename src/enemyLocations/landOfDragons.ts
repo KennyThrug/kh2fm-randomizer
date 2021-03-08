@@ -748,6 +748,11 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.STORM_RIDER,
 				value: "11C4D324",
+
+				secondaryObjectLocation : {
+					name: "Wind",
+					value: "11c4d450",
+				},
 			},
 		],
 	},

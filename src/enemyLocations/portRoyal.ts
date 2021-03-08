@@ -331,6 +331,11 @@ export const portRoyalEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.GRIM_REAPER,
 				value: "11C5BA78",
+
+				secondaryObjectLocation : {
+					name : "Puzzle Piece (Black Pearl)",
+					value: "11c5b784",
+				},
 			},
 		],
 	},

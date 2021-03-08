@@ -15,6 +15,11 @@ export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.HOSTILE_PROGRAM,
 				value: "11C56530",
+
+				secondaryObjectLocation : {
+					name: "Data Orbs",
+					value: "11c56570",
+				},
 			},
 		],
 	},
@@ -204,6 +209,11 @@ export const spaceParanoidsEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.SARK,
 				value: "11C4FCC4",
+
+				secondaryObjectLocation : {
+					name: "Puzzle Piece (MCP's Room)",
+					value: "11c4f850",
+				}
 			},
 			{
 				enemy: Enemies.STRAFER_FORCED_FIGHTS,

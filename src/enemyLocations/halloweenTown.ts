@@ -139,6 +139,11 @@ export const halloweenTownEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.PRISON_KEEPER,
 				value: "11C55570",
+
+				secondaryObjectLocation : {
+					name: "Puzzle Piece (Hill)",
+					value: "11C54810",
+				},
 			},
 		],
 	},
