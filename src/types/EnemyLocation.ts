@@ -26,6 +26,9 @@ export interface EnemyLocation {
 		event?: string;
 		secondaryObjectLocation?: {
 			name: string;
+			//Two Types of Things can go here
+			//#1, the location in data of another object in the arena that can be replaced (starts with a 1)
+			//#2, the location in data to check for what party member is needed to replace (starting with a D)
 			value: string;
 		};
 		patches?: {

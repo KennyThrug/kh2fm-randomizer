@@ -35,6 +35,7 @@ import { patchEnemies } from "../seed/patchEnemies";
 import { shuffle } from "./shuffle";
 import { placeBosses } from "../seed/placeBosses";
 import { spawnlimiter } from "src/patches/spawnlimiter";
+import { forcePartyMembers } from "src/patches/forcePartyMembers";
 
 export const createPnach = (seed: Seed, configuration: Configuration) => {
 	const patches: string[] = [`// ${configuration.name}`];
@@ -169,6 +170,7 @@ export const createPnach = (seed: Seed, configuration: Configuration) => {
 
 		if (configuration.experimental.bosses === Toggle.ON) {
 
+			patches.push(forcePartyMembers);
 
 			// const starttime = (new Date()).getUTCMilliseconds()
 

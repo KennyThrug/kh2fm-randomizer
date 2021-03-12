@@ -1,6 +1,6 @@
 import { createLine } from "../helpers/createLine";
 import { createJoker } from "../helpers/createJoker";
-import { placeSecondaryBossObject } from "./bossFixes"
+import { bossFixes} from "./bossFixes"
 export const patchEnemies = (enemymap: any[], world: string, room: string, event: string) => {
     var comment = "// "
     var codes = []
@@ -11,17 +11,13 @@ export const patchEnemies = (enemymap: any[], world: string, room: string, event
         const newenemy = replacement.new
         comment += `${newenemy.enemy.name} (was ${oldenemy.enemy.name})`
         if (oldenemy !== newenemy) {
+            comment += bossFixes(codes,oldenemy,newenemy);
             var newValue = newenemy.enemy.value
 
             if (newenemy.enemy.rules) {
                 if (newenemy.enemy.rules.useWhenReplacing) {
                     newValue = newenemy.enemy.rules.useWhenReplacing
                 }
-            }
-            if(newenemy.enemy.secondaryObject !== undefined){
-                
-                placeSecondaryBossObject(codes,oldenemy,newenemy.enemy);
-                comment += `\n//${newenemy.enemy.secondaryObject?.name} (was ${oldenemy.secondaryObjectLocation?.name})`
             }
             const modifierAddress  = (parseInt(oldenemy.value, 16) + 32).toString(16);
             const modifier =

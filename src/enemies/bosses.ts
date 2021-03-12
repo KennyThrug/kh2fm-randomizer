@@ -97,6 +97,8 @@ export const bosses = {
 				"Hades (2nd Visit & Hades Paradox Cup Battle)",
 				"Sark",
 				//For all Bans the Hydra's Head Teleports out of bounds
+
+				"Scar", //Reaction Command dont work as lion
 			]
 		}
 	},
@@ -108,6 +110,11 @@ export const bosses = {
 		secondaryObject: {
 			name: "Posessor",
 			value: "0164",
+		},
+		rules: {
+			bannedFrom: [
+				"Scar", //Reaction Command Neccessary
+			],
 		},
 	},
 	DARK_THORN: {
