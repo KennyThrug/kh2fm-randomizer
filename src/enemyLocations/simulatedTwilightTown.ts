@@ -88,13 +88,21 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 			},
 		],
 	},
-	// {
-	// 	type: EnemyLocationType.BOSS_FIGHT,
-	// 	location: LocationName.SIMULATED_TWILIGHT_TOWN,
-	// 	description: "Twilight Thorn Boss Fight",
-	// 	value: "11C59E24",
-	// 	enemy: Enemies.TWILIGHT_THORN,
-	// },
+	{
+		type: EnemyLocationType.BOSS_FIGHT,
+		location: LocationName.SIMULATED_TWILIGHT_TOWN,
+		description: "Twilight Thorn Boss Fight",
+		maxSize: 4443212, //Larxene
+		world: "02",
+		room: "22",
+		event: "9D",
+		enemies: [
+			{
+				enemy: Enemies.TWILIGHT_THORN,
+				value: "11C59E24",
+			},
+		],
+	},
 	// {
 	// 	type: EnemyLocationType.BOSS_FIGHT,
 	// 	location: LocationName.SIMULATED_TWILIGHT_TOWN,
