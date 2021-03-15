@@ -63,6 +63,10 @@ export const prideLandsEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.SCAR,
 				value: "11C5A74C",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},

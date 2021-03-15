@@ -223,6 +223,10 @@ export const halloweenTownEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.THE_EXPERIMENT,
 				value: "11C56120",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},

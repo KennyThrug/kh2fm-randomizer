@@ -413,10 +413,18 @@ export const agrabahEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.VOLCANIC_LORD,
 				value: "11C32934",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 			{
 				enemy: Enemies.BLIZZARD_LORD,
 				value: "11C32974",
+				secondaryObjectLocation: {
+					name : "Second Party Member Slot",
+					value : "PM2",
+				}
 			},
 		],
 	},

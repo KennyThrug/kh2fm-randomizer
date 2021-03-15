@@ -43,6 +43,10 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.XIGBAR_DATA,
 				value: "11C4ACBC",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},
@@ -58,6 +62,10 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.XALDIN_DATA,
 				value: "11C5A1DC",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},
@@ -73,6 +81,10 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.VEXEN_DATA,
 				value: "11C598D4",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},
@@ -88,6 +100,10 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.LEXAUS_DATA,
 				value: "11C56734",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},
@@ -110,6 +126,10 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.SAIX_DATA,
 				value: "11C521E0",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},
@@ -125,6 +145,10 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.AXEL_DATA,
 				value: "11C5B0BC",
+				secondaryObjectLocation: {
+					name : "Nothing",
+					value : "Solo",
+				}
 			},
 		],
 	},
@@ -168,6 +192,10 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.MARLUXIA_DATA,
 				value: "11C59114",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				},
 				patches: {
 					all: [
 						{
@@ -208,6 +236,10 @@ export const organizationXIIIEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.ROXAS_DATA,
 				value: "11C4F13C",
+				secondaryObjectLocation: {
+					name : "Nothing",
+					value : "Solo",
+				}
 			},
 		],
 	},

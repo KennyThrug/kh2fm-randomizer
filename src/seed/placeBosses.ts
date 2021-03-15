@@ -64,7 +64,7 @@ export const placeBosses = (seed: string) => {
 	for (var b = 0; b < bosses.length; b++) {
 
 		// Try multiple times to find a correct placing for the bosses	
-		const NATTEMPTS = 3
+		const NATTEMPTS = 10
 		for (var i = 0; i < NATTEMPTS; i++) {
 			const shuffledBosses = unignoredBosses.map(boss => boss)
 			const availableLocations = shuffledBosses.map(newboss => {

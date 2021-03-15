@@ -15,6 +15,10 @@ export const absentSilhouettesEnemyLocations: EnemyLocation[] = [
 			{
 				value: "11C597A0",
 				enemy: Enemies.VEXEN_AS,
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},
@@ -30,6 +34,10 @@ export const absentSilhouettesEnemyLocations: EnemyLocation[] = [
 			{
 				value: "11C56368",
 				enemy: Enemies.LEXAEUS_AS,
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},
@@ -70,6 +78,10 @@ export const absentSilhouettesEnemyLocations: EnemyLocation[] = [
 						}
 					] 
 				},
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				},
 			},
 		],
 	},
@@ -85,6 +97,10 @@ export const absentSilhouettesEnemyLocations: EnemyLocation[] = [
 			{
 				value: "11C5649C",
 				enemy: Enemies.LARXENE_AS,
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},

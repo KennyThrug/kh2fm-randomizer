@@ -34,7 +34,11 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		enemies: [
 			{
 				enemy: Enemies.HADES_ESCAPE,
-				value: "11C591FC"
+				value: "11C591FC",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			}
 		]
 	},
@@ -424,11 +428,19 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		enemies: [
 			{
 				enemy: Enemies.LEON,
-				value: "11C4DAC4"
+				value: "11C4DAC4",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 			{
 				enemy: Enemies.YUFFIE,
-				value: "11C4DA84"
+				value: "11C4DA84",
+				secondaryObjectLocation: {
+					name : "Second Party Member Slot",
+					value : "PM2",
+				}
 			}
 		]
 	},
@@ -443,7 +455,11 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		enemies: [
 			{
 				enemy: Enemies.HERCULES_CUPS,
-				value: "11C4FCD4"
+				value: "11C4FCD4",
+				secondaryObjectLocation: {
+					name : "Nothing",
+					value : "Solo",
+				}
 			}
 		]
 	},
@@ -458,7 +474,11 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 		enemies: [
 			{
 				enemy: Enemies.TIFA,
-				value: "11C5265C"
+				value: "11C5265C",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 			// {
 			// 	enemy: Enemies.YUFFIE,
@@ -481,7 +501,11 @@ export const olympusEnemyLocations: EnemyLocation[] = [
 			// },
 			{
 				enemy: Enemies.CLOUD,
-				value: "11C53FF8"
+				value: "11C53FF8",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			}
 		]
 	}

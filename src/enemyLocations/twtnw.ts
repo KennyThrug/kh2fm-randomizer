@@ -15,6 +15,10 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.ROXAS,
 				value: "11C4F008",
+				secondaryObjectLocation: {
+					name : "Nothing",
+					value : "Solo",
+				}
 			},
 		],
 	},
@@ -30,6 +34,10 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.XIGBAR,
 				value: "11C4AB88",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},
@@ -52,6 +60,10 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 			{
 				value: "11C520AC",
 				enemy: Enemies.SAIX,
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},
@@ -193,6 +205,10 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 			{
 				value: "11C5A9AC",
 				enemy: Enemies.ARMOR_XEMNAS,
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},
@@ -208,6 +224,10 @@ export const twtnwEnemyLocations: EnemyLocation[] = [
 			{
 				value: "11C58840",
 				enemy: Enemies.ARMOR_XEMNAS,
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},

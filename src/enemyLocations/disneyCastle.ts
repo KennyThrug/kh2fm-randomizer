@@ -226,6 +226,10 @@ export const disneyCastleEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.LINGERING_WILL,
 				value: "11C556E0",
+				secondaryObjectLocation: {
+					name : "First Party Member Slot",
+					value : "PM1",
+				}
 			},
 		],
 	},

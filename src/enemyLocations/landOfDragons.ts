@@ -570,6 +570,10 @@ export const landOfDragonsEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.SHAN_YU,
 				value: "11C4BE70",
+				secondaryObjectLocation: {
+					name: "Hayabusa",
+					value: "11C4BEB0",
+				},
 			},
 			{
 				enemy: Enemies.NIGHTWALKER,

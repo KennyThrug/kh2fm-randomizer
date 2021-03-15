@@ -963,6 +963,10 @@ export const hollowBastionEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.SEPHIROTH,
 				value: "11C24740",
+				secondaryObjectLocation: {
+					name : "Nothing",
+					value : "Solo",
+				}
 			},
 		],
 	},

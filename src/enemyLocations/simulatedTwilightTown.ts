@@ -100,6 +100,10 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.TWILIGHT_THORN,
 				value: "11C59E24",
+				secondaryObjectLocation: {
+					name : "Nothing",
+					value : "Solo",
+				}
 			},
 		],
 	},
@@ -343,6 +347,10 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 			{
 				enemy: Enemies.AXEL_II,
 				value: "11C5AF88",
+				secondaryObjectLocation: {
+					name : "Nothing",
+					value : "Solo",
+				},
 				patches: {
 					all: [
 						{
