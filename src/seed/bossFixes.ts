@@ -58,7 +58,7 @@ export const placeSecondaryBossObject = (
 
 /**
  * This Function is kinda a mess of switch statements, however, its purpose is fairly simple. It makes codes to:
- * 1.) If the player is solo, then add a party member to be replaced
+ * 1.) If the player is solo, add a party member to be replaced
  * 2.) Check for which party member is first/second in the order (depending on @param location). 
  * 3.) Replace whatever party member is in that slot
  * Note: if the SecondaryObject is a 6 digit value (ie. Hercules) then it will switch the boss and the party member, so the boss will be a party member.
@@ -79,16 +79,12 @@ export const partyMemberReplacements = (
     var replaceValue = ((boss.secondaryObject?.value + "").length < 6) ? boss.secondaryObject?.value : boss.value;
     var checkVal = "";
     var soraVal = ""
-
-    if(location.secondaryObjectLocation === "Solo"){
-        location.secondaryObjectLocation = "PM1";
-    }
     switch(location.world){
         case "0E" : { //Haloween Town
             soraVal = "11c6cc20"; break;                
         }
         case "0A" : { //Pride Lands
-            soraVal = "11c6cc20"; break
+            soraVal = "11c6cc20"; break;
         }
         case "11" : { //Space Paranoids
             soraVal = "11ce11e8"; break;
@@ -99,6 +95,12 @@ export const partyMemberReplacements = (
         default : { //In a world where Sora wears normal clothes
             soraVal = "11CE0B68"; break;
         }
+    }
+    
+    if(location.secondaryObjectLocation === "Solo"){
+        checkVal = (parseInt("2032f064",16) + (parseInt(location.world,16) * 4)).toString(16);
+        codes.push(createLine(`${checkVal}`,"12010200"))
+        location.secondaryObjectLocation = "PM1";
     }
     if(location.secondaryObjectLocation === "PM1"){
         checkVal = (parseInt("D032f064",16) + (parseInt(location.world,16) * 4)).toString(16);
@@ -136,65 +138,5 @@ export const partyMemberReplacements = (
     //Switch boss and party member if offset needed
     if(boss.value === replaceValue){
         boss.value = boss.secondaryObject?.value + "";
-    }
-}
-
-/**
- * Just a large switch statement, that will add patches to make bosses work better
- * Twilight Town : Replaces current character with Roxas, so the Reaction Command works.
- * @param codes Code Array to push to
- * @param location EnemyLocation of arena boss is getting replacecd into
- * @param boss Enemy that is getting replaced into the location
- */
-export const aiFixes = (
-    codes : string[],
-    location : any,
-    boss : any
-) : void => {
-    switch(boss.enemy.name){
-        case "Twilight Thorn": {
-            switch(location.world) {
-                case "0E" :{
-                    codes.push(createLine("11c6cc20","0000005A",false));
-                    break;
-                }
-                case "0A" :{
-                    codes.push(createLine("11c6cc20","0000005A",false));
-                    break;
-                }
-                case "11" :{
-                    codes.push(createLine("11ce11e8","0000005A",false));
-                    break;
-                }
-                case "0D" :{
-                    codes.push(createLine("11ce121C","0000005A",false));
-                    break;
-                }
-                default :{
-                    codes.push(createLine("11CE0B68","0000005A",false));
-                    break;
-                }
-            }
-            codes.push(
-                "//Remove Dodge Roll LV2 1\npatch=1,EE,E0010102,extended,0032EE96",
-                "patch=1,EE,1036E5B8,extended,00000235",
-                "//Remove Dodge Roll LV2 2\npatch=1,EE,E0030103,extended,0032EE96",
-                "patch=1,EE,1036E5B8,extended,00000000",
-                "patch=1,EE,1032EE9C,extended,00008235",
-                "patch=1,EE,1032EEC2,extended,00000000",
-                "//Remove Dodge Roll LV3 1\npatch=1,EE,E0010104,extended,0032EE96",
-                "patch=1,EE,1036E5BA,extended,00000236",
-                "//Remove Dodge Roll LV3 2\npatch=1,EE,E0030105,extended,0032EE96",
-                "patch=1,EE,1036E5BA,extended,00000000",
-                "patch=1,EE,1032EE9C,extended,00008236",
-                "patch=1,EE,1032EEC2,extended,00000000",
-                "//Remove Dodge Roll MAX 1\npatch=1,EE,E0010106,extended,0032EE96",
-                "patch=1,EE,1036E5BC,extended,00000237",
-                "//Remove Dodge Roll MAX 2\npatch=1,EE,E0020107,extended,0032EE96",
-                "patch=1,EE,1032EE9C,extended,00008237",
-                "patch=1,EE,1032EEC2,extended,00000000"
-            );
-            break;
-        }
     }
 }

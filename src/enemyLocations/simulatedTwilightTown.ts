@@ -97,14 +97,14 @@ export const simulatedTwilightTownEnemyLocations: EnemyLocation[] = [
 		room: "22",
 		event: "9D",
 		enemies: [
-			{
-				enemy: Enemies.TWILIGHT_THORN,
-				value: "11C59E24",
-				secondaryObjectLocation: {
-					name : "Nothing",
-					value : "Solo",
-				}
-			},
+		// 	{
+		// 		enemy: Enemies.TWILIGHT_THORN,
+		// 		value: "11C59E24",
+		// 		secondaryObjectLocation: {
+		// 			name : "Nothing",
+		// 			value : "Solo",
+		// 		}
+		//	 },
 		],
 	},
 	// {
